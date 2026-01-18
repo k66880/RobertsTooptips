@@ -12,12 +12,12 @@ public class HarvestLevel {
     }
     
     public static Component getHarvestLevelName(int level) {
-        if (level == 1) return Component.translatable("tooltip.roberts_game_tweaks.harvest_level_1");
-        if (level == 2) return Component.translatable("tooltip.roberts_game_tweaks.harvest_level_2");
-        if (level == 3) return Component.translatable("tooltip.roberts_game_tweaks.harvest_level_3");
-        if (level == 4) return Component.translatable("tooltip.roberts_game_tweaks.harvest_level_4");
-        // if (level == 5) return Component.translatable("tooltip.roberts_game_tweaks.harvest_level_5");
-        return Component.translatable("tooltip.roberts_game_tweaks.harvest_level_0");
+        if (level == 1) return Component.translatable("tooltip.roberts_tooltips.harvest_level_1");
+        if (level == 2) return Component.translatable("tooltip.roberts_tooltips.harvest_level_2");
+        if (level == 3) return Component.translatable("tooltip.roberts_tooltips.harvest_level_3");
+        if (level == 4) return Component.translatable("tooltip.roberts_tooltips.harvest_level_4");
+        // if (level == 5) return Component.translatable("tooltip.roberts_tooltips.harvest_level_5");
+        return Component.translatable("tooltip.roberts_tooltips.harvest_level_0");
     }
 
     private static int detectMiningLevelByTesting(ItemStack stack) {

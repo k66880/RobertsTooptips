@@ -133,8 +133,8 @@ public class TooltipHandler {
         if (max > 0) {
             // 物品无法破坏
             if (RGTHelper.isUnbreakable(stack)) {
-                MutableComponent value = Component.translatable("tooltip.roberts_game_tweaks.unbreakable").withStyle(ChatFormatting.GREEN);
-                lines.add(makeAttributeLine(AttributeType.DURABILITY, "tooltip.roberts_game_tweaks.durability", value));
+                MutableComponent value = Component.translatable("tooltip.roberts_tooltips.unbreakable").withStyle(ChatFormatting.GREEN);
+                lines.add(makeAttributeLine(AttributeType.DURABILITY, "tooltip.roberts_tooltips.durability", value));
             }
             else {
                 MutableComponent value = Component.empty();
@@ -151,7 +151,7 @@ public class TooltipHandler {
                         addDurabilityInfoForNumber(value, max, rest);
                         break;
                 }
-                lines.add(makeAttributeLine(AttributeType.DURABILITY, "tooltip.roberts_game_tweaks.durability", value));
+                lines.add(makeAttributeLine(AttributeType.DURABILITY, "tooltip.roberts_tooltips.durability", value));
             }
         }
     }
@@ -178,16 +178,16 @@ public class TooltipHandler {
         float _value = rest * symbolCount / max;
         int _symbolCount = 0;
         while (_value >= 1) {
-            value.append(Component.translatable("tooltip.roberts_game_tweaks.symbol_full").withStyle(color));
+            value.append(Component.translatable("tooltip.roberts_tooltips.symbol_full").withStyle(color));
             _symbolCount++;
             _value -= 1;
         }
         if (_value > 0) {
-            value.append(Component.translatable("tooltip.roberts_game_tweaks.symbol_half").withStyle(color));
+            value.append(Component.translatable("tooltip.roberts_tooltips.symbol_half").withStyle(color));
             _symbolCount++;
         }
         while (_symbolCount < symbolCount) {
-            value.append(Component.translatable("tooltip.roberts_game_tweaks.symbol_empty").withStyle(color));
+            value.append(Component.translatable("tooltip.roberts_tooltips.symbol_empty").withStyle(color));
             _symbolCount++;
         }
     }
@@ -203,7 +203,7 @@ public class TooltipHandler {
         int harvestLevel = HarvestLevel.getHarvestLevel(targetInfo.stack);
         if (harvestLevel > 0) {
             Component levelName = HarvestLevel.getHarvestLevelName(harvestLevel);
-            lines.add(makeAttributeLine(AttributeType.HARVESTLEVEL, "tooltip.roberts_game_tweaks.harvest_level", levelName));
+            lines.add(makeAttributeLine(AttributeType.HARVESTLEVEL, "tooltip.roberts_tooltips.harvest_level", levelName));
         }
     }
 
@@ -218,18 +218,18 @@ public class TooltipHandler {
 
         AttackAttributes attackAttributes = AttackAttributes.LoadFromItemStack(targetInfo.stack);
         if (attackAttributes.hasMainHandDamage)
-            lines.add(makeAttributeLine(AttributeType.ATTACK, "tooltip.roberts_game_tweaks.attack", attackAttributes.formatMainHandDamage()));
+            lines.add(makeAttributeLine(AttributeType.ATTACK, "tooltip.roberts_tooltips.attack", attackAttributes.formatMainHandDamage()));
         if (attackAttributes.hasMainHandAttackSpeed)
-            lines.add(makeAttributeLine(AttributeType.ATTACK, "tooltip.roberts_game_tweaks.attack_speed", attackAttributes.formatMainHandAttackSpeed()));
+            lines.add(makeAttributeLine(AttributeType.ATTACK, "tooltip.roberts_tooltips.attack_speed", attackAttributes.formatMainHandAttackSpeed()));
         if (attackAttributes.hasMainHandAttackKnockback)
-            lines.add(makeAttributeLine(AttributeType.ATTACK, "tooltip.roberts_game_tweaks.attack_knockback", attackAttributes.formatMainHandAttackKnockback()));
+            lines.add(makeAttributeLine(AttributeType.ATTACK, "tooltip.roberts_tooltips.attack_knockback", attackAttributes.formatMainHandAttackKnockback()));
             
         if (attackAttributes.hasOffHandDamage)
-            lines.add(makeAttributeLine(AttributeType.ATTACK, "tooltip.roberts_game_tweaks.attack_offhand", attackAttributes.formatOffHandDamage()));
+            lines.add(makeAttributeLine(AttributeType.ATTACK, "tooltip.roberts_tooltips.attack_offhand", attackAttributes.formatOffHandDamage()));
         if (attackAttributes.hasOffHandAttackSpeed)
-            lines.add(makeAttributeLine(AttributeType.ATTACK, "tooltip.roberts_game_tweaks.attack_speed_offhand", attackAttributes.formatOffHandAttackSpeed()));
+            lines.add(makeAttributeLine(AttributeType.ATTACK, "tooltip.roberts_tooltips.attack_speed_offhand", attackAttributes.formatOffHandAttackSpeed()));
         if (attackAttributes.hasOffHandAttackKnockback)
-            lines.add(makeAttributeLine(AttributeType.ATTACK, "tooltip.roberts_game_tweaks.attack_knockback_offhand", attackAttributes.formatOffHandAttackKnockback()));
+            lines.add(makeAttributeLine(AttributeType.ATTACK, "tooltip.roberts_tooltips.attack_knockback_offhand", attackAttributes.formatOffHandAttackKnockback()));
     }
 
     //#endregion
@@ -243,11 +243,11 @@ public class TooltipHandler {
 
         ArmorAttributes armorAttributes = ArmorAttributes.LoadFromItemStack(targetInfo.stack);
         if (armorAttributes.hasArmor)
-            lines.add(makeAttributeLine(AttributeType.ARMOR, "tooltip.roberts_game_tweaks.armor", armorAttributes.formatArmor()));
+            lines.add(makeAttributeLine(AttributeType.ARMOR, "tooltip.roberts_tooltips.armor", armorAttributes.formatArmor()));
         if (armorAttributes.hasArmorToughness && armorAttributes.armorToughness > 0)
-            lines.add(makeAttributeLine(AttributeType.ARMOR, "tooltip.roberts_game_tweaks.armor_toughness", armorAttributes.formatArmorToughness()));
+            lines.add(makeAttributeLine(AttributeType.ARMOR, "tooltip.roberts_tooltips.armor_toughness", armorAttributes.formatArmorToughness()));
         if (armorAttributes.hasKnockbackResistance)
-            lines.add(makeAttributeLine(AttributeType.ARMOR, "tooltip.roberts_game_tweaks.knockback_resistance", armorAttributes.formAtknockbackResistance()));
+            lines.add(makeAttributeLine(AttributeType.ARMOR, "tooltip.roberts_tooltips.knockback_resistance", armorAttributes.formAtknockbackResistance()));
     }
 
     //#endregion
@@ -261,8 +261,8 @@ public class TooltipHandler {
         FoodAttributes foodAttributes = FoodAttributes.LoadFromItemStack(targetInfo.stack);
         if (foodAttributes.hasFoodProperties) {
             if (ModConfigCore.showAttributesForFoods) {
-                lines.add(makeAttributeLine(AttributeType.FOOD, "tooltip.roberts_game_tweaks.restore_hunger", foodAttributes.formatHunger()));
-                lines.add(makeAttributeLine(AttributeType.FOOD, "tooltip.roberts_game_tweaks.restore_saturation", foodAttributes.formatSaturation()));
+                lines.add(makeAttributeLine(AttributeType.FOOD, "tooltip.roberts_tooltips.restore_hunger", foodAttributes.formatHunger()));
+                lines.add(makeAttributeLine(AttributeType.FOOD, "tooltip.roberts_tooltips.restore_saturation", foodAttributes.formatSaturation()));
             }
             if (ModConfigCore.showEffectsForFoods) {
                 for (FoodEffect effect : foodAttributes.effects)
@@ -281,7 +281,7 @@ public class TooltipHandler {
         
         var burnTime = ForgeHooks.getBurnTime(targetInfo.stack, null);
         if (burnTime > 0)
-            lines.add(makeAttributeLine(AttributeType.FOOD, "tooltip.roberts_game_tweaks.burn_time", RGTHelper.ticksToMMSS(burnTime)));
+            lines.add(makeAttributeLine(AttributeType.FOOD, "tooltip.roberts_tooltips.burn_time", RGTHelper.ticksToMMSS(burnTime)));
     }
 
     //#endregion
