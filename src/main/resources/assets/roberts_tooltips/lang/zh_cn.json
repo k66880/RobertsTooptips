@@ -1,0 +1,31 @@
+{
+    "tooltip.roberts_game_tweaks.durability": "耐久: ",
+
+    "tooltip.roberts_game_tweaks.harvest_level": "挖掘等级: ",
+    "tooltip.roberts_game_tweaks.harvest_level_0": "Unknown",
+    "tooltip.roberts_game_tweaks.harvest_level_1": "I（可挖石头）",
+    "tooltip.roberts_game_tweaks.harvest_level_2": "II（可挖铁矿）",
+    "tooltip.roberts_game_tweaks.harvest_level_3": "III（可挖钻石）",
+    "tooltip.roberts_game_tweaks.harvest_level_4": "IV（可挖黑曜石）",
+
+    "tooltip.roberts_game_tweaks.symbol_full": "█",
+    "tooltip.roberts_game_tweaks.symbol_half": "▒",
+    "tooltip.roberts_game_tweaks.symbol_empty": "▒",
+    "tooltip.roberts_game_tweaks.unbreakable": "无法破坏 ",
+
+    "tooltip.roberts_game_tweaks.attack": "攻击伤害: ",
+    "tooltip.roberts_game_tweaks.attack_speed": "攻击速度: ",
+    "tooltip.roberts_game_tweaks.attack_knockback": "击退距离: ",
+    "tooltip.roberts_game_tweaks.attack_offhand": "攻击伤害[副手]: ",
+    "tooltip.roberts_game_tweaks.attack_speed_offhand": "攻击速度[副手]: ",
+    "tooltip.roberts_game_tweaks.attack_knockback_offhand": "击退距离[副手]: ",
+
+    "tooltip.roberts_game_tweaks.armor": "护甲值: ",
+    "tooltip.roberts_game_tweaks.armor_toughness": "盔甲韧性: ",
+    "tooltip.roberts_game_tweaks.knockback_resistance": "击退抗性: ",
+
+    "tooltip.roberts_game_tweaks.restore_hunger": "回复饥饿值: ",
+    "tooltip.roberts_game_tweaks.restore_saturation": "回复饱和度: ",
+    
+    "tooltip.roberts_game_tweaks.burn_time": "燃烧时间: "
+}

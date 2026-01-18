@@ -1,0 +1,31 @@
+{
+    "tooltip.roberts_game_tweaks.durability": "Durability: ",
+
+    "tooltip.roberts_game_tweaks.harvest_level": "Harvest Level: ",
+    "tooltip.roberts_game_tweaks.harvest_level_0": "Unknown",
+    "tooltip.roberts_game_tweaks.harvest_level_1": "I (Capable for Stone)",
+    "tooltip.roberts_game_tweaks.harvest_level_2": "II (Capable for Iron)",
+    "tooltip.roberts_game_tweaks.harvest_level_3": "III (Capable for Diamond)",
+    "tooltip.roberts_game_tweaks.harvest_level_4": "IV (Capable for Obsidian)",
+
+    "tooltip.roberts_game_tweaks.symbol_full": "█",
+    "tooltip.roberts_game_tweaks.symbol_half": "▒",
+    "tooltip.roberts_game_tweaks.symbol_empty": "▒",
+    "tooltip.roberts_game_tweaks.unbreakable": "Unbreakable ",
+
+    "tooltip.roberts_game_tweaks.attack": "Attack Damage: ",
+    "tooltip.roberts_game_tweaks.attack_speed": "Attack Speed: ",
+    "tooltip.roberts_game_tweaks.attack_knockback": "Attack Knockback: ",
+    "tooltip.roberts_game_tweaks.attack_offhand": "Attack Damage [Off Hand]: ",
+    "tooltip.roberts_game_tweaks.attack_speed_offhand": "Attack Speed [Off Hand]: ",
+    "tooltip.roberts_game_tweaks.attack_knockback_offhand": "Attack Knockback [Off Hand]: ",
+
+    "tooltip.roberts_game_tweaks.armor": "Armor: ",
+    "tooltip.roberts_game_tweaks.armor_toughness": "Armor Toughness: ",
+    "tooltip.roberts_game_tweaks.knockback_resistance": "Knockback Resistance: ",
+
+    "tooltip.roberts_game_tweaks.restore_hunger": "Restore Hunger: ",
+    "tooltip.roberts_game_tweaks.restore_saturation": "Restore Saturation: ",
+    
+    "tooltip.roberts_game_tweaks.burn_time": "Burn Time: "
+}
